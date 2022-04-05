@@ -32,5 +32,15 @@ Charger le fichier `einstein.prolog` avec la commande suivante :
 
 Visualiser la solution de l'énigme avec la commande suivante :
 ```
-einstein(S).
+einstein(S),maplist(writeln,S).
+```
+
+Visualiser la maison où on boit de l'eau, avec la commande suivante :
+```
+einstein(S),member(X,S),nth1(4,X,eau).
+```
+
+Visualiser la maison où on possède un zèbre, avec la commande suivante :
+```
+einstein(S),member(X,S),nth1(3,X,zebre).
 ```
